@@ -1,0 +1,42 @@
+<html>
+<head>
+<style type="text/css">
+#contenedor {
+}
+#cabecera { color: black;
+font-size:20px;
+text-align: center;
+}
+#menu {
+float: left;
+width: 60%;
+text-align: center;
+color: red
+}
+#contenido {
+float: left;
+width: 40%;
+font-size:12px;
+}
+p {border-width: 2px;
+border-style: solid;
+border-color: green;
+}
+
+</style>
+</head>
+
+<body bgcolor="Lavender">
+    <div id="contenedor">
+        <div id="cabecera">
+            <h1>ContentApp-Barrapunto</h1>
+        </div>
+        <div id="menu">
+            <h1>NOTICIAS<br>DE </br>BARRA PUNTO</h1>
+        </div>
+        <div id="contenido">
+            <p>{{ context.contenido | safe }}</p>
+        </div>
+    </div>
+</body>
+</html>
